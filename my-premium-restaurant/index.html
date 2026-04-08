@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron & Spice - Premium Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">Saffron & Spice</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#regional">Menu</a></li>
+                <li><a href="#chef">The Chef</a></li>
+                <li><a href="#services">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="nav-btn">Reserve a Table</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Taste the <br><span class="highlight">Heritage</span> of India</h1>
+                <p>An exquisite culinary journey capturing the authenticity of regional spices and premium ingredients, crafted exclusively for the modern palate.</p>
+                <button class="btn-primary" onclick="document.getElementById('regional').scrollIntoView();">Explore Menu</button>
+            </div>
+        </section>
+
+        <section id="regional" class="regional-section">
+            <div class="section-title">
+                <h2>Our Regional Exclusives</h2>
+                <p>Discover heritage dishes from the grand states of India.</p>
+                <div class="custom-select-wrapper">
+                    <select id="state-select" class="modern-select">
+                        <option value="rajasthan" selected>Rajasthan</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="bihar">Bihar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="food-grid" class="food-grid">
+                <!-- Dynamic Content Injected Here via app.js -->
+            </div>
+        </section>
+
+        <section id="chef" class="chef-section">
+            <div class="chef-content">
+                <h2>Meet the <span class="highlight">Master</span></h2>
+                <p>Chef Aarav Sharma brings over two decades of Michelin-starred experience, redefining the boundaries of traditional Indian cuisine with flawless modern culinary techniques. Every dish is a personal signature of uncompromising quality and passion.</p>
+                <div class="chef-signature">Signature: Aarav Sharma</div>
+            </div>
+            <div class="chef-image">
+                <img src="images/chef.png" alt="Master Chef Aarav Sharma">
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="section-title">
+                <h2>The Premium Experience</h2>
+                <p>Why dining with us stands apart.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Curated Ingredients</h3>
+                    <p>Sourced directly from organic farms across the subcontinent to ensure pristine flavors.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Master Chefs</h3>
+                    <p>Our kitchen is led by award-winning artisans of traditional culinary methods.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Opulent Ambiance</h3>
+                    <p>Dine in a relaxing, meticulously designed environment that elevates your senses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-card">
+                <h2>Reserve Your Experience</h2>
+                <p>Book a table for an unforgettable evening.</p>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Reservation complete');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit" class="btn-primary form-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Saffron & Spice</div>
+            <p>Bringing modern luxury to ancient traditions.</p>
+            <p class="copyright">&copy; 2026 Saffron & Spice. All rights entirely reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
